@@ -3,18 +3,12 @@ description: Create a bug report to help us improve
 title: "[Bug]: "
 labels: ["bug"]
 body:
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Description
      description: Provide a concise description of the bug, including its symptoms and impact.
    validations:
      required: true
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Steps to Reproduce
@@ -28,18 +22,12 @@ body:
        3.
    validations:
      required: true
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Expected Behavior
      description: Describe what should happen under normal circumstances.
    validations:
      required: true
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Actual Behavior
@@ -68,23 +56,14 @@ body:
      description: Version number and relevant details
    validations:
      required: true
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Additional Information
      description: Any additional context, observations, or relevant information about the bug. Attach screenshots or logs if available.
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Proposed Solution
      description: If known, briefly outline a proposed solution or workaround.
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Tasks
@@ -94,9 +73,6 @@ body:
        - [ ] Develop and test a fix.
        - [ ] Validate the fix in a staging environment.
        - [ ] Prepare documentation update if necessary.
- - type: markdown
-   attributes:
-     value: 
  - type: textarea
    attributes:
      label: Dependencies
