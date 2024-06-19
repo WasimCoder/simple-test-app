@@ -1,33 +1,54 @@
 name: Bug Report
 description: Create a bug report to help us improve
-title: "[Bug]: "
-labels: ["bug"]
+title: "Title : "
+labels: ["bug", "critical"]
 body:
+ - type: markdown
+   attributes:
+     value: |
+       ## Bug Report
+
+       Please fill out the details below to help us investigate and resolve the issue effectively.
  - type: textarea
    attributes:
      label: Description
      description: Provide a concise description of the bug, including its symptoms and impact.
    validations:
      required: true
+ - type: markdown
+   attributes:
+     value: |
+       ## Steps to Reproduce
+       Please provide a step-by-step guide to reproduce the issue:
  - type: textarea
    attributes:
      label: Steps to Reproduce
      description: |
-       1. [Detailed steps to reproduce the issue, starting from the initial action or navigation]
-       2. [Include specific input data or configurations if relevant]
-       3. [Note any specific conditions or environment setup required to reproduce]
+       1. Detailed steps to reproduce the issue, starting from the initial action or navigation
+       2. Include specific input data or configurations if relevant
+       3. Note any specific conditions or environment setup required to reproduce
      value: |
        1.
        2.
        3.
    validations:
      required: true
+ - type: markdown
+   attributes:
+     value: |
+       ## Expected Behavior
+       Describe what should happen under normal circumstances.
  - type: textarea
    attributes:
      label: Expected Behavior
      description: Describe what should happen under normal circumstances.
    validations:
      required: true
+ - type: markdown
+   attributes:
+     value: |
+       ## Actual Behavior
+       Describe what happens instead; include any error messages or unexpected outcomes.
  - type: textarea
    attributes:
      label: Actual Behavior
@@ -37,7 +58,8 @@ body:
  - type: markdown
    attributes:
      value: |
-       **Bug Identified Version(s):**
+       ## Versions
+       Please specify the versions related to this bug:
  - type: input
    attributes:
      label: Controller Version
@@ -48,22 +70,33 @@ body:
    attributes:
      label: Probe Version
      description: Version number and relevant details
-   validations:
-     required: true
  - type: input
    attributes:
      label: Agent Version
      description: Version number and relevant details
-   validations:
-     required: true
+ - type: markdown
+   attributes:
+     value: |
+       ## Additional Information
+       Any additional context, observations, or relevant information about the bug. Attach screenshots or logs if available.
  - type: textarea
    attributes:
      label: Additional Information
      description: Any additional context, observations, or relevant information about the bug. Attach screenshots or logs if available.
+ - type: markdown
+   attributes:
+     value: |
+       ## Proposed Solution
+       If known, briefly outline a proposed solution or workaround.
  - type: textarea
    attributes:
      label: Proposed Solution
      description: If known, briefly outline a proposed solution or workaround.
+ - type: markdown
+   attributes:
+     value: |
+       ## Tasks
+       List out tasks required to resolve the issue.
  - type: textarea
    attributes:
      label: Tasks
@@ -73,10 +106,19 @@ body:
        - [ ] Develop and test a fix.
        - [ ] Validate the fix in a staging environment.
        - [ ] Prepare documentation update if necessary.
+ - type: markdown
+   attributes:
+     value: |
+       ## Dependencies
+       List any dependencies or related issues that need to be addressed alongside this bug.
  - type: textarea
    attributes:
      label: Dependencies
      description: List any dependencies or related issues that need to be addressed alongside this bug.
+ - type: markdown
+   attributes:
+     value: |
+       ## Priority and Component
  - type: dropdown
    attributes:
      label: Priority
@@ -98,6 +140,10 @@ body:
        - Agent
    validations:
      required: true
+ - type: markdown
+   attributes:
+     value: |
+       ## Milestone and Related Issues
  - type: input
    attributes:
      label: Milestone
@@ -106,10 +152,18 @@ body:
    attributes:
      label: Related Issues
      description: If there are related issues or pull requests, list them here.
+ - type: markdown
+   attributes:
+     value: |
+       ## Estimated Time
  - type: input
    attributes:
      label: Estimated Time
      description: Provide an estimated time for completion if possible.
+ - type: markdown
+   attributes:
+     value: |
+       ## Acknowledgement
  - type: checkboxes
    attributes:
      label: Acknowledgement
@@ -118,4 +172,10 @@ body:
        - label: I have searched for existing issues and this is not a duplicate.
          required: true
        - label: I have included all relevant information to reproduce the issue.
+         required: true
+       - label: I have verified this issue occurs on the latest version.
+         required: true
+       - label: I have tested this issue on different environments (if applicable).
+         required: true
+       - label: I have provided logs and/or screenshots if required to help identify the issue.
          required: true
