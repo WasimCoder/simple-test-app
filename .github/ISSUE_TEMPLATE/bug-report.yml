@@ -92,10 +92,6 @@ body:
        - Blocking
    validations:
      required: true
- - type: markdown
-   attributes:
-     value: |
-       ## Acknowledgement
  - type: checkboxes
    attributes:
      label: Acknowledgement
