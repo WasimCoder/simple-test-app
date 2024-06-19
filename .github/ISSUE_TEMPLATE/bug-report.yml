@@ -5,8 +5,7 @@ labels: ["bug"]
 body:
  - type: markdown
    attributes:
-     value: |
-       **Bug Description:**
+     value: 
  - type: textarea
    attributes:
      label: Description
@@ -15,8 +14,7 @@ body:
      required: true
  - type: markdown
    attributes:
-     value: |
-       **Steps to Reproduce:**
+     value: 
  - type: textarea
    attributes:
      label: Steps to Reproduce
@@ -32,8 +30,7 @@ body:
      required: true
  - type: markdown
    attributes:
-     value: |
-       **Expected Behavior:**
+     value: 
  - type: textarea
    attributes:
      label: Expected Behavior
@@ -42,8 +39,7 @@ body:
      required: true
  - type: markdown
    attributes:
-     value: |
-       **Actual Behavior:**
+     value: 
  - type: textarea
    attributes:
      label: Actual Behavior
@@ -74,24 +70,21 @@ body:
      required: true
  - type: markdown
    attributes:
-     value: |
-       **Additional Information:**
+     value: 
  - type: textarea
    attributes:
      label: Additional Information
      description: Any additional context, observations, or relevant information about the bug. Attach screenshots or logs if available.
  - type: markdown
    attributes:
-     value: |
-       **Proposed Solution:**
+     value: 
  - type: textarea
    attributes:
      label: Proposed Solution
      description: If known, briefly outline a proposed solution or workaround.
  - type: markdown
    attributes:
-     value: |
-       **Tasks:**
+     value: 
  - type: textarea
    attributes:
      label: Tasks
@@ -103,8 +96,7 @@ body:
        - [ ] Prepare documentation update if necessary.
  - type: markdown
    attributes:
-     value: |
-       **Dependencies:**
+     value: 
  - type: textarea
    attributes:
      label: Dependencies
