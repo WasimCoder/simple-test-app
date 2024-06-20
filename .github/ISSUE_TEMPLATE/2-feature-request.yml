@@ -29,6 +29,15 @@ body:
       required: true
 
   - type: textarea
+    id: reference_links
+    attributes:
+      label: "Reference Links"
+      description: "Include any relevant links that provide additional information about the feature."
+      placeholder: "e.g., Documentation, articles, existing feature requests."
+    validations:
+      required: true
+
+        - type: textarea
     id: alternatives
     attributes:
       label: "Alternatives"
@@ -45,15 +54,6 @@ body:
       placeholder: "e.g., Examples from other applications, screenshots, or logs."
     validations:
       required: false
-
-  - type: textarea
-    id: reference_links
-    attributes:
-      label: "Reference Links"
-      description: "Include any relevant links that provide additional information about the feature."
-      placeholder: "e.g., Documentation, articles, existing feature requests."
-    validations:
-      required: true
 
   - type: textarea
     id: impact_analysis
