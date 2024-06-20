@@ -1,0 +1,56 @@
+name: "Feature Request"
+description: "Suggest a new feature or enhancement."
+title: "[Feature]: "
+labels: ["feature request", "enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for suggesting a feature!**  
+        Please fill out the following details to help us understand your request.
+
+  - type: input
+    id: summary
+    attributes:
+      label: "Feature Summary"
+      description: "A brief summary of the feature."
+      placeholder: "e.g., Add dark mode"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Feature Description"
+      description: "Detailed description of the feature, including the use case."
+      placeholder: "e.g., Dark mode to reduce eye strain in low-light environments."
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: "Benefits"
+      description: "How will this feature improve the application or user experience?"
+      placeholder: "e.g., Enhances user comfort and accessibility."
+    validations:
+      required: true
+
+  - type: input
+    id: alternatives
+    attributes:
+      label: "Alternatives"
+      description: "Any alternative solutions or workarounds considered?"
+      placeholder: "e.g., Browser extensions"
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional Context"
+      description: "Any extra information or screenshots."
+      placeholder: "e.g., Examples from other apps."
+    validations:
+      required: false
