@@ -1,6 +1,6 @@
 name: "Feature Request"
 description: "Suggest a new feature or enhancement."
-title: "[Feature]: "
+title: "[Feature Request]: "
 labels: ["feature request", "enhancement"]
 
 body:
@@ -8,22 +8,13 @@ body:
     attributes:
       value: |
         **Thank you for suggesting a feature!**  
-        Please fill out the following details to help us understand your request.
-
-  - type: input
-    id: summary
-    attributes:
-      label: "Feature Summary"
-      description: "A brief summary of the feature."
-      placeholder: "e.g., Add dark mode"
-    validations:
-      required: true
+        Please fill out the following details to help us understand your request and its impact.
 
   - type: textarea
     id: description
     attributes:
       label: "Feature Description"
-      description: "Detailed description of the feature, including the use case."
+      description: "Provide a detailed description of the feature, including the problem it solves and how it should work."
       placeholder: "e.g., Dark mode to reduce eye strain in low-light environments."
     validations:
       required: true
@@ -32,25 +23,43 @@ body:
     id: benefits
     attributes:
       label: "Benefits"
-      description: "How will this feature improve the application or user experience?"
+      description: "Describe the benefits of this feature for users and the application."
       placeholder: "e.g., Enhances user comfort and accessibility."
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: alternatives
     attributes:
       label: "Alternatives"
-      description: "Any alternative solutions or workarounds considered?"
-      placeholder: "e.g., Browser extensions"
+      description: "List any alternative solutions or workarounds that were considered."
+      placeholder: "e.g., Browser extensions, third-party applications."
     validations:
       required: false
 
   - type: textarea
-    id: context
+    id: additional_context
     attributes:
       label: "Additional Context"
-      description: "Any extra information or screenshots."
-      placeholder: "e.g., Examples from other apps."
+      description: "Provide any additional context, such as technical requirements, constraints, or related issues."
+      placeholder: "e.g., Examples from other applications, screenshots, or logs."
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference_links
+    attributes:
+      label: "Reference Links"
+      description: "Include any relevant links that provide additional information about the feature."
+      placeholder: "e.g., Documentation, articles, existing feature requests."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact_analysis
+    attributes:
+      label: "Impact Analysis"
+      description: "Discuss the potential impact of this feature on existing functionality, users, and workflows."
+      placeholder: "e.g., May require updates to existing UI components, potential performance impacts."
     validations:
       required: false
