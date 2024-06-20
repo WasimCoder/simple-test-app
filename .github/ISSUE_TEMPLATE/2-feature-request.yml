@@ -37,21 +37,21 @@ body:
     validations:
       required: true
 
-        - type: textarea
-    id: alternatives
-    attributes:
-      label: "Alternatives"
-      description: "List any alternative solutions or workarounds that were considered."
-      placeholder: "e.g., Browser extensions, third-party applications."
-    validations:
-      required: false
-
   - type: textarea
     id: additional_context
     attributes:
       label: "Additional Context"
       description: "Provide any additional context, such as technical requirements, constraints, or related issues."
       placeholder: "e.g., Examples from other applications, screenshots, or logs."
+    validations:
+      required: false
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives"
+      description: "List any alternative solutions or workarounds that were considered."
+      placeholder: "e.g., Browser extensions, third-party applications."
     validations:
       required: false
 
